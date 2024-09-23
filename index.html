@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+
+        }
+
+        body {
+            background-image: url("bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+
+        }
+
+        .cont {
+            position: relative;
+            margin-top: 8.5%;
+            height: 800px;
+            width: 600px;
+            background-image: url("./contimg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .cont1 {
+            position: relative;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .cont1 input {
+            padding: 20px 120px; 
+            border-radius: 30px;
+            text-align: center;
+            background: transparent;
+            border: 5px solid white;
+            align-items: center;
+        }
+        .cont input::placeholder{
+            color: black;
+            font-size: 21px;
+            font-weight: bolder;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="cont">
+            <div class="cont1">
+                <h1 style="font-size: 50px; margin-top: 50px;">Login</h1>
+                <form>
+                    <input type="text" placeholder="User id">
+                    <input type="password" placeholder="password">
+                    <br>
+                    <input style="padding: 15px 160px; font-size: 22px; font-weight: bolder; color: red; margin-top: 50px;" type="submit" placeholder="Login">
+                    <br>
+                    <input style="padding: 15px 150px; font-size: 22px; font-weight: bolder; color: red; margin-top: 50px;" type="button" value="I am New">
+                </form>
+
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
